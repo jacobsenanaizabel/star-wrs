@@ -1,10 +1,17 @@
-import styled, { keyframes } from 'styled-components';
-import blinking from '../../../assets/image/blinking.png';
-import stars from '../../../assets/image/stars.png';
-
+import { Fragment } from 'react';
 import Container from 'react-bootstrap/Container';
 
-export const Wrapper = styled(Container)`
+import styled, { keyframes } from 'styled-components';
+import blinks from '../../../assets/image/blinking.png';
+import stars from '../../../assets/image/stars.png';
+import { device } from '../../../styles.js';
+
+export const Wrapper = styled(Fragment)`
+  width:100%;
+  height:100%;
+  position: fixed;
+`
+export const Starts = styled.div`
   width:100%;
   height:100%;
   position:absolute;
@@ -12,16 +19,28 @@ export const Wrapper = styled(Container)`
   background:#000 url(${stars}) repeat top center;
 `;
 
-export const keyFrameBlinkingStart = keyframes`
+export const blinkingStart = keyframes`
 from {background-position:0 0;}
 to {background-position:-1000px 5000px;}
 `
 
-export const Blinking = styled(Container)`
+export const ContainerWrapped = styled(Container)`
   width:100%;
   height:100%;
   position:absolute;
   z-index:1;
-  background:transparent  url(${blinking})  repeat top center;
-  animation:${keyFrameBlinkingStart} 200s linear infinite;
+  overflow: hidden;
+  background:transparent  url(${blinks})  repeat top center;
+  animation:${blinkingStart} 200s linear infinite;
+
+  @media ${device.laptop} { 
+		max-width:100%;
+  }
+  
+  @media ${device.mobile} { 
+    overflow-y:auto;
+  }
+  @media ${device.mobilexs} { 
+    overflow-y:auto;
+	}
 `
