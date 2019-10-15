@@ -18,8 +18,8 @@ function Cardboard({ title, subtitle, list, button, img }) {
 			{list && (
 				<Fragment>
 					<ListGroup variant="flush">
-						{list.map((data) => {
-							return (<ListGroup.Item> {data}</ListGroup.Item>)
+						{list.map((data, index) => {
+							return (<ListGroup.Item key={`${index}-listGroup`}> {data}</ListGroup.Item>)
 						})}
 					</ListGroup>
 				</Fragment>

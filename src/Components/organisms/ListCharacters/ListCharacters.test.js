@@ -4,12 +4,12 @@ import { shallow } from "enzyme";
 import ListCharacters from "./ListCharacters";
 
 describe("FixedIncome component", () => {
-  let getFixedIncomeMock;
-  let getTotalFixedIncomeMock;
+  let getListCharacters;
+  let getImgsCharacters;
 
   beforeEach(() => {
-    getFixedIncomeMock = jest.fn();
-    getTotalFixedIncomeMock = jest.fn();
+    getListCharacters = jest.fn();
+    getImgsCharacters = jest.fn();
   });
 
   it("should have an initial state", () => {

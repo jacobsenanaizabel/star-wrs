@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component should render Header match snapshot 1`] = `
+<Styled(Component)>
+  <styled.div>
+    <Icon
+      alt="starwars icon"
+      fill="#ffffff"
+      height="auto"
+      icon="starwars"
+      width="auto"
+    />
+  </styled.div>
+</Styled(Component)>
+`;

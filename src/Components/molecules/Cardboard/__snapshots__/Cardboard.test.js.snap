@@ -1,0 +1,244 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card component should Card match snapshot with empty content 1`] = `
+<Card
+  body={false}
+  style={
+    Object {
+      "background": "#d2a019",
+      "height": "100%",
+      "margin": "auto",
+      "width": "48%",
+    }
+  }
+>
+  <CardImg
+    variant="top"
+  />
+  <CardBody>
+    <CardTitle>
+      Title
+    </CardTitle>
+    <CardSubtitle>
+      Subtitle
+    </CardSubtitle>
+  </CardBody>
+  <CardBody>
+    <Button />
+  </CardBody>
+</Card>
+`;
+
+exports[`Card component should Card match snapshot with props 1`] = `
+<Card
+  body={false}
+  style={
+    Object {
+      "background": "#d2a019",
+      "height": "100%",
+      "margin": "auto",
+      "width": "48%",
+    }
+  }
+>
+  <CardImg
+    variant="top"
+  />
+  <CardBody>
+    <CardTitle>
+      title example
+    </CardTitle>
+    <CardSubtitle>
+      subtitle example
+    </CardSubtitle>
+  </CardBody>
+  <ListGroup
+    variant="flush"
+  >
+    <ListGroupItem
+      active={false}
+      disabled={false}
+      key="0-listGroup"
+      variant={null}
+    >
+       
+      1
+    </ListGroupItem>
+    <ListGroupItem
+      active={false}
+      disabled={false}
+      key="1-listGroup"
+      variant={null}
+    >
+       
+      2
+    </ListGroupItem>
+    <ListGroupItem
+      active={false}
+      disabled={false}
+      key="2-listGroup"
+      variant={null}
+    >
+       
+      3
+    </ListGroupItem>
+    <ListGroupItem
+      active={false}
+      disabled={false}
+      key="3-listGroup"
+      variant={null}
+    >
+       
+      4
+    </ListGroupItem>
+    <ListGroupItem
+      active={false}
+      disabled={false}
+      key="4-listGroup"
+      variant={null}
+    >
+       
+      5
+    </ListGroupItem>
+    <ListGroupItem
+      active={false}
+      disabled={false}
+      key="5-listGroup"
+      variant={null}
+    >
+       
+      6
+    </ListGroupItem>
+    <ListGroupItem
+      active={false}
+      disabled={false}
+      key="6-listGroup"
+      variant={null}
+    >
+       
+      7
+    </ListGroupItem>
+    <ListGroupItem
+      active={false}
+      disabled={false}
+      key="7-listGroup"
+      variant={null}
+    >
+       
+      8
+    </ListGroupItem>
+  </ListGroup>
+  <CardBody>
+    <Button
+      text="button test"
+    />
+  </CardBody>
+</Card>
+`;
+
+exports[`Card component should Card match snapshot with props and list 1`] = `
+<Card
+  body={false}
+  style={
+    Object {
+      "background": "#d2a019",
+      "height": "100%",
+      "margin": "auto",
+      "width": "48%",
+    }
+  }
+>
+  <CardImg
+    variant="top"
+  />
+  <CardBody>
+    <CardTitle>
+      title example
+    </CardTitle>
+    <CardSubtitle>
+      subtitle example
+    </CardSubtitle>
+  </CardBody>
+  <ListGroup
+    variant="flush"
+  >
+    <ListGroupItem
+      active={false}
+      disabled={false}
+      key="0-listGroup"
+      variant={null}
+    >
+       
+      1
+    </ListGroupItem>
+    <ListGroupItem
+      active={false}
+      disabled={false}
+      key="1-listGroup"
+      variant={null}
+    >
+       
+      2
+    </ListGroupItem>
+    <ListGroupItem
+      active={false}
+      disabled={false}
+      key="2-listGroup"
+      variant={null}
+    >
+       
+      3
+    </ListGroupItem>
+    <ListGroupItem
+      active={false}
+      disabled={false}
+      key="3-listGroup"
+      variant={null}
+    >
+       
+      4
+    </ListGroupItem>
+    <ListGroupItem
+      active={false}
+      disabled={false}
+      key="4-listGroup"
+      variant={null}
+    >
+       
+      5
+    </ListGroupItem>
+    <ListGroupItem
+      active={false}
+      disabled={false}
+      key="5-listGroup"
+      variant={null}
+    >
+       
+      6
+    </ListGroupItem>
+    <ListGroupItem
+      active={false}
+      disabled={false}
+      key="6-listGroup"
+      variant={null}
+    >
+       
+      7
+    </ListGroupItem>
+    <ListGroupItem
+      active={false}
+      disabled={false}
+      key="7-listGroup"
+      variant={null}
+    >
+       
+      8
+    </ListGroupItem>
+  </ListGroup>
+  <CardBody>
+    <Button
+      text="button test"
+    />
+  </CardBody>
+</Card>
+`;
