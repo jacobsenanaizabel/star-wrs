@@ -6,7 +6,6 @@ import Button from '../../atoms/Button'
 import ListGroup from 'react-bootstrap/ListGroup'
 
 function Cardboard({ title, subtitle, list, button, img }) {
-	console.log(img)
 	return (
 		<Card style={{ width: '48%', height: '100%', margin: 'auto', background: '#d2a019' }}>
 			<Card.Img variant="top" src={img} />

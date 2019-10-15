@@ -9,7 +9,7 @@ import { Line, Column } from "./style.js";
 
 const ListCharacters = () => {
   const [url] = useState("https://swapi.co/api/people/");
-  const [data, loading, setData, setLoading, img] = useFetch(
+  const [data, loading, setData, setLoading, resultDatas] = useFetch(
     url,
     "https://www.googleapis.com/customsearch/v1?q=tie&cx=006556936853971270487%3Atip6rjdt3xu&searchType=image&key=AIzaSyCV5v1NbhR02akfxiH1LpvOZWcczCMwNWY"
   );
@@ -27,7 +27,7 @@ const ListCharacters = () => {
       {loading === false ? (
         <Fragment>
           <Line>
-            {data.results.map((result, index) => {
+            {resultDatas.map((result, index) => {
               return (
                 <Column
                   key={`${index}-${result.name}-col`}
@@ -41,7 +41,7 @@ const ListCharacters = () => {
                     key={`${index}-${result.name}-card`}
                     title={result.name}
                     subtitle={result.birth_year}
-                    img={img}
+                    img={result.img}
                     button="naves estelares"
                   />
                 </Column>
@@ -51,8 +51,8 @@ const ListCharacters = () => {
           <Pagination data={data.count} onClick={e => nextPage(e)} />
         </Fragment>
       ) : (
-        <Loader />
-      )}
+          <Loader />
+        )}
     </Fragment>
   );
 };

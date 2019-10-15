@@ -4,7 +4,7 @@ import Route from "react-router-dom/Route";
 import Switch from "react-router-dom/Switch";
 import LazyImport from "./Lazy";
 
-const Home = LazyImport(() => import("../components/template/Home"));
+const Home = LazyImport(() => import("../Components/template/Home"));
 
 const Routes = () => (
   <BrowserRouter>
