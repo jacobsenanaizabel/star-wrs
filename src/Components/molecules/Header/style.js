@@ -9,24 +9,24 @@ export const Line = styled(Row)`
 	align-items: center;
 	justify-content: center;
 	height: 50%;
-		
-	@media ${device.mobile} { 
+
+	@media ${device.mobile} {
 		height: 40%;
 	}
-	@media ${device.mobilexs} { 
-		height: 31s%;
+	@media ${device.mobilexs} {
+		height: 30%;
 	}
 
 `;
 
 export const Heading = styled.div`
 	width: 40%;
-	height: 100%;	
-	@media ${device.mobile} { 
+	height: 100%;
+	@media ${device.mobile} {
 		width:40%;
 		height: 50%;
 	}
-	@media ${device.laptop} { 
+	@media ${device.laptop} {
 		width:25%;
 	}
 `;
