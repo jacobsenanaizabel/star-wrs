@@ -1,16 +1,17 @@
-import React, { Fragment } from 'react';
-import { Wrapper, Blinking } from './style.js';
+import React from 'react';
+import { Wrapper, Starts, ContainerWrapped } from './style.js';
 import Header from "../../molecules/Header"
+import ListCharacters from "../../organisms/ListCharacters"
 
 function Home() {
 	return (
-		<Fragment>
-			<Wrapper />
-			<Blinking>
+		<Wrapper>
+			<Starts />
+			<ContainerWrapped>
 				<Header />
-			</Blinking>
-		</Fragment>
-
+				<ListCharacters />
+			</ContainerWrapped>
+		</Wrapper>
 	);
 }
 

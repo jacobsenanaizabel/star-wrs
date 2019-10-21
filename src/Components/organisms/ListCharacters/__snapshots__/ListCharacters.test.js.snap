@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FixedIncome component should match snapshot with loading 1`] = `
+<Fragment>
+  <Loader />
+</Fragment>
+`;
