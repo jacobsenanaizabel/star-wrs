@@ -21,15 +21,15 @@ function useFetch(url) {
           let url = `https://www.googleapis.com/customsearch/v1?q=${result.name}&cx=006556936853971270487%3Atip6rjdt3xu&searchType=image&key=AIzaSyCV5v1NbhR02akfxiH1LpvOZWcczCMwNWY`
           let response = await fetch(url);
           let json = await response.json();
-          const img = json ? json.items[0].image.thumbnailLink : { img: "" };
+          const img = json && json.items ? json.items[0].image.thumbnailLink : { img: "https://i.pinimg.com/originals/30/93/d2/3093d2a63cf2a6d4d1a6a276676d7ae7.jpg" };
           results = { ...result, img }
 
-          return {
-            results
-          }
+          return results;
         });
 
-        setResults(resultObj);
+        const result = resultObj;
+
+        setResults(result);
         setLoading(false);
       }
     } catch (error) {

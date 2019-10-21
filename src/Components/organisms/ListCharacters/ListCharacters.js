@@ -10,8 +10,7 @@ import { Line, Column } from "./style.js";
 const ListCharacters = () => {
   const [url] = useState("https://swapi.co/api/people/");
   const [data, loading, setData, setLoading, resultDatas] = useFetch(
-    url,
-    "https://www.googleapis.com/customsearch/v1?q=tie&cx=006556936853971270487%3Atip6rjdt3xu&searchType=image&key=AIzaSyCV5v1NbhR02akfxiH1LpvOZWcczCMwNWY"
+    url
   );
 
   const nextPage = async number => {
@@ -43,6 +42,7 @@ const ListCharacters = () => {
                     subtitle={result.birth_year}
                     img={result.img}
                     button="naves estelares"
+                    list={result.starships}
                   />
                 </Column>
               );

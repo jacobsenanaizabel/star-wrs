@@ -1,11 +1,21 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 import PropTypes from 'prop-types';
 
 import Card from 'react-bootstrap/Card'
 import Button from '../../atoms/Button'
 import ListGroup from 'react-bootstrap/ListGroup'
 
+import { Item } from "./style.js";
+
+
 function Cardboard({ title, subtitle, list, button, img }) {
+
+	const [interships, setInterships] = useState(false);
+
+	const showInterships = event => {
+		setInterships(true)
+	}
+
 	return (
 		<Card style={{ width: '48%', height: '100%', margin: 'auto', background: '#d2a019' }}>
 			<Card.Img variant="top" src={img} />
@@ -14,16 +24,18 @@ function Cardboard({ title, subtitle, list, button, img }) {
 				<Card.Subtitle>{subtitle}</Card.Subtitle>
 
 			</Card.Body>
-			{list && (
+			{interships && (
 				<Fragment>
 					<ListGroup variant="flush">
-						{list.map((data, index) => {
-							return (<ListGroup.Item key={`${index}-listGroup`}> {data}</ListGroup.Item>)
-						})}
+						{list && list.length > 0 ? (
+							list.map((data, index) => {
+
+								return (<Item key={`${index}-listGroup`}> {data}</Item>)
+							})) : "não possue nave :( "}
 					</ListGroup>
 				</Fragment>
 			)}
-			<Card.Body>
+			<Card.Body onClick={(e) => showInterships()}>
 				<Button text={button} />
 			</Card.Body>
 		</Card>

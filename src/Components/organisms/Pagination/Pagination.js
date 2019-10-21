@@ -24,7 +24,6 @@ class PaginationWrapper extends React.Component {
 	}
 
 	nextPage(number, props) {
-		console.log(number)
 		return props.onClick(number)
 	}
 
